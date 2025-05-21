@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adventure Dice Game</title>
+  <link rel="stylesheet" href="Dice.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dice and Scenarios</h1>
+
+    <div class="transparent-box">
+      <section class="scenario-section">
+        <img id="scenarioImage" src="" alt="Scenario image" class="scenario-img" hidden onerror="this.hidden = true" />
+        <p id="scenario" class="scenario-text">Click "Start Scenario" to begin your challenge!</p>
+        <p id="output" class="output-text"></p>
+      </section>
+
+      <!-- Buttons -->
+      <div class="button-group">
+        <button onclick="startScenario()">New Game</button>
+        <button id="nextBtn" onclick="startScenario()" hidden>Next</button>
+        <button id="rollBtn" onclick="handleRoll()" hidden>Roll Dice</button>
+      </div>
+
+      <!-- Player HP Display -->
+      <div id="playerHpContainer" class="player-hp-container">
+        <p>Player Health: <span id="playerHpText">❤️ 5 / 5</span></p>
+        <div class="hp-bar">
+          <div id="playerHpBar" class="hp-fill" style="width: 100%; background-color: red;"></div>
+        </div>
+      </div>
+
+      <!-- Boss HP Display -->
+      <div id="bossHpContainer" class="boss-hp-container" hidden>
+        <p>Boss Health: <span id="bossHpText"></span></p>
+        <div class="hp-bar">
+          <div id="bossHpBar" class="hp-fill"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Icon Button -->
+  <button id="infoToggle" class="floating-button">
+    <img src="./Assets/Peon.webp" alt="Info" style="width: 100px; height: 100px;">
+  </button>
+
+  <!-- Popup -->
+  <div id="popupBox" class="popup-box hidden">
+    <p>Hello, Peon Here. Unfortunately there's a couple of unfinished stuff in this project due to time constraints.</p>
+  <ul>
+    <li>Images for each scenario</li>
+    <li>Power-ups</li>
+    <li>Some sounds I guess lol</li>
+  </ul>
+  <p>Regardless though, it works, so uh thanks for checking I suppose hehe.</p>
+  </div>
+
+  <script src="DiceRoll.js"></script>
+  <script src="PopupToggle.js"></script>
+</body>
+</html>

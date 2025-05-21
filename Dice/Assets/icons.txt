@@ -1,0 +1,7 @@
+Player Life - ❤️
+Dice - 🎲
+Failed Roll - ❌
+Success Roll - ✅
+Critical Hit - 🔥
+Boss Death - 💥
+Player Death - 💀
